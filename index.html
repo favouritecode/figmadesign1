@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma 1</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #a12405;
+            color: white;
+            padding: 40px;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        /* Image Section */
+        .hero img {
+            max-width: 40%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        /* Text Section */
+        .hero-content {
+            max-width: 40%;
+            text-align: left;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+        }
+
+        .hero-content button {
+            background-color: #f0c14b;
+            color: black;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                height: auto; /* Adjust height to fit content */
+            }
+
+            .hero img {
+                max-width: 80%;
+                margin-bottom: 20px;
+                order: -1; /* Make the image come first */
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero-content h1 {
+                font-size: 1.5em;
+            }
+
+            .hero-content p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <img src="img/figma 1.jpeg" alt="Hero Image">
+    <div class="hero-content">
+        <h1 style="font-size: 80px;">Take Your <br> Designs to <br> the Next <br> Level</h1>
+        <h3 style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur ac justo ac nulla fermentum scelerisque.</h3><br>
+        <button>Explore</button>
+    </div>
+</section>
+
+</body>
+</html>
